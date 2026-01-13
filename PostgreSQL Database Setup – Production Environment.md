@@ -21,9 +21,3 @@ As part of an application deployment requirement, I configured a PostgreSQL data
 ### 🎯 Outcome
 The database environment was successfully prepared according to application prerequisites, enabling secure and uninterrupted deployment while following best practices for access management.
 ```
-
-If you want, I can also:
-
-* Rewrite this in **resume-style bullet points**
-* Add **commands used** (still anonymized)
-* Make it sound more **DevOps / SRE-focused** for recruiters 💼🚀
