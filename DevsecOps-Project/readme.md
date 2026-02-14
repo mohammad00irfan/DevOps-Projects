@@ -633,9 +633,6 @@ These commands are run on your **Jenkins EC2 instance**.
     ```
     The username is `admin`.
 
-Here's the corrected version of that section with proper Markdown formatting for the images:
-
-```markdown
 | Grafana Dashboard |
 | :---: |
 | ![Grafana Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_r0oEQN7FnI2d6Zuhe6VNzA.png) |
