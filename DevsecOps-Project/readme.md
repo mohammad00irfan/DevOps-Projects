@@ -826,10 +826,5 @@ argocd cluster add i-08b9d0ff0409f48e7@virtualtechbox-cluster.us-west-2.eksctl.i
 In this DevSecOps project, we successfully implemented a robust CI/CD pipeline using Jenkins, integrated with Docker and Kubernetes to streamline application delivery. The project involved automating the entire build, test, and deployment processes, ensuring security was embedded at each stage. By leveraging Docker for containerization and Kubernetes for orchestration, we enhanced scalability and reliability, allowing the infrastructure to dynamically adapt to application demands.
 
 The integration of security checks, such as vulnerability scans and automated compliance audits, directly into the pipeline ensured a secure software delivery lifecycle. The end result was a fully automated, secure, and efficient CI/CD pipeline, reducing deployment time, improving scalability, and increasing the overall security posture of the application infrastructure.
-```
-
-
-
-
 
 
