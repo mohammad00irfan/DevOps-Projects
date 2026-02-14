@@ -297,14 +297,3 @@ ii. Through the container deployed on the same instance.
 ![](https://miro.medium.com/v2/resize:fit:700/1*m4QlHuuSb3rSQwgoTeqk9g.png)
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*ftzbIzjJIC_nSsDjmzMf6A.png)
-
-## 🛠️ Author & Community  
-
-This project is crafted by **[Mohammed](https://github.com/mohammad00irfan)** 💡.  
-I’d love to hear your feedback! Feel free to share your thoughts.  
-
-📧 **Connect with me:**
-
-- **GitHub**: [@mohammad00irfan](https://github.com/mohammad00irfan) 
-
----
