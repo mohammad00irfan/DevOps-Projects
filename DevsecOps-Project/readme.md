@@ -633,15 +633,206 @@ These commands are run on your **Jenkins EC2 instance**.
     ```
     The username is `admin`.
 
+Here's the corrected version of that section with proper Markdown formatting for the images:
+
+```markdown
 | Grafana Dashboard |
 | :---: |
-| ![Grafana Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_r0oEQN7FnI2d6Zuhe6VNzA.png).|
-| ![Grafana Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_hvXhzVDmBZNGAUHVQgT0Wg.png).|
+| ![Grafana Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_r0oEQN7FnI2d6Zuhe6VNzA.png) |
 
-| Import the dashboard for the kubernetes clustser. |
-| ![Import the dashboard for the kubernetes clustser.](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_mwozTHaRwpZpOPz9dRmF7w.png).|
+| Grafana Dashboard |
+| :---: |
+| ![Grafana Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_hvXhzVDmBZNGAUHVQgT0Wg.png) |
 
-| v) Import dashboard — 15760 — Load — Select Prometheus & Click Import. |
-| ![Import dashboard — 15760](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_CzL2FVFh-9rAsX3YXY5sfg.png).|
+**Import the dashboard for the kubernetes cluster.**
+
+| Import Dashboard |
+| :---: |
+| ![Import Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_mwozTHaRwpZpOPz9dRmF7w.png) |
+
+**v) Import dashboard — 15760 — Load — Select Prometheus & Click Import.**
+
+| Dashboard 15760 |
+| :---: |
+| ![Dashboard 15760](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_CzL2FVFh-9rAsX3YXY5sfg.png) |
+
+**Imported Dashboard**
+
+| Imported Dashboard |
+| :---: |
+| ![Imported Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_hB84JpTVgR8r_BRUkAUGVQ.png) |
+
+**CPU Usage**
+
+| CPU Usage |
+| :---: |
+| ![CPU Usage](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_muSS0QK_cU9w_ksKl64aVw.png) |
+
+**Memory Utilization**
+
+| Memory Utilization |
+| :---: |
+| ![Memory Utilization](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_h27CLySVb1uNus0vzhURqQ.png) |
+
+**iv) Import more dashboard — 12740 — Load — Select Prometheus & Click Import.**
+
+| Dashboard 12740 |
+| :---: |
+| ![Dashboard 12740](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_LnjRmIDQKQzAMbhORzBlCA.png) |
+
+| Dashboard 12740 Details |
+| :---: |
+| ![Dashboard 12740 Details](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_nKYELYba1HAdwQJ1vjEJqg.png) |
+
+## Step 8: ArgoCD Installation on Kubernetes Cluster and Add EKS Cluster to ArgoCD
+
+ArgoCD is an open source platform that streamlines the deployment and management of applications on Kubernetes clusters.
+
+**1) First, create a namespace**
+```bash
+kubectl create namespace argocd
+```
+
+**2) Next, let's apply the yaml configuration files for ArgoCD**
+```bash
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+
+| ArgoCD Installation |
+| :---: |
+| ![ArgoCD Install](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_rMAnZV6d9BMXsDkOevocuQ.png) |
+
+**3) Now we can view the pods created in the ArgoCD namespace.**
+```bash
+kubectl get pods -n argocd
+```
+
+**4) To interact with the API Server we need to deploy the CLI:**
+```bash
+sudo curl --silent --location -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/v2.4.7/argocd-linux-amd64
+sudo chmod +x /usr/local/bin/argocd
+```
+
+**5) Expose argocd-server**
+
+| ArgoCD Expose |
+| :---: |
+| ![ArgoCD Expose](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_wuLZ8GySGM7rsNXFtrj_Jg.png) |
+
+```bash
+kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+```
+
+**6) Wait about 2 minutes for the LoadBalancer creation**
+```bash
+kubectl get svc -n argocd
+```
+
+| ArgoCD Services |
+| :---: |
+| ![ArgoCD Services](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_ZmUa4kgmVXrnEV6GnVpvqg.png) |
+
+**Copy the DNS name and open in a new browser**
+
+| ArgoCD Login Screen |
+| :---: |
+| ![ArgoCD Login](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_0TJybz3ss-Uq-l99FRXjzg.png) |
+
+**7) Get password, decode it, and login to ArgoCD on Browser. Go to user info and change the password**
+```bash
+kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
+echo WXVpLUg2LWxoWjRkSHFmSA== | base64 --decode
+```
+
+| Password Decode |
+| :---: |
+| ![Password Decode](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_gZgfNUjrNq2ek-GlQUsKcA.png) |
+
+| ArgoCD Settings |
+| :---: |
+| ![ArgoCD Settings](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_JWzL5vzKuRcah8UiL_x_Ig.png) |
+
+**8) Login to ArgoCD from CLI**
+```bash
+argocd login a2255bb2bb33f438d9addf8840d294c5-785887595.us-west-2.elb.amazonaws.com --username admin
+```
+
+| ArgoCD CLI Login |
+| :---: |
+| ![CLI Login](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_qYHXhutQM3h4MGWyosxyZw.png) |
+
+**9) Check available clusters in ArgoCD**
+```bash
+argocd cluster list
+```
+
+| Cluster List |
+| :---: |
+| ![Cluster List](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_Hvi_1QPGem73oE2Lh5rhMA.png) |
+
+**10) Below command will show the EKS cluster details**
+```bash
+kubectl config get-contexts
+```
+
+**11) Add above EKS cluster to ArgoCD with below command**
+```bash
+argocd cluster add i-08b9d0ff0409f48e7@virtualtechbox-cluster.us-west-2.eksctl.io --name virtualtechbox-eks-cluster
+```
+
+| Add Cluster |
+| :---: |
+| ![Add Cluster](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_cLybTtXvP-O5wdX8w3j6lA.png) |
+
+**12) Now if you give command `argocd cluster list` you will get both the clusters EKS & ArgoCD (in-cluster). This can be verified at ArgoCD Dashboard.**
+
+## Step 9: Configure ArgoCD to Deploy Pods on EKS Cluster and Automate ArgoCD Deployment using GitHub Repository
+
+**Settings**
+
+| ArgoCD Settings |
+| :---: |
+| ![Settings](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_PhZXUVGZTOCfYQ32MRe62Q.png) |
+
+**Enter credentials**
+
+| Enter Credentials |
+| :---: |
+| ![Enter Credentials](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_JvI2FHrh0UDNEQgnsa01vA.png) |
+
+**Successfully connected**
+
+| Successfully Connected |
+| :---: |
+| ![Connected](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1__okYja306hyQQ07mSLECEw.png) |
+
+**Back to Jenkins and build again to automate the deployment.**
+
+| Jenkins Build |
+| :---: |
+| ![Jenkins Build](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_Gxz2Gl6VDvlscvobhtUI6A.png) |
+
+**Application deployed to ArgoCD**
+
+| Application Deployed |
+| :---: |
+| ![Application Deployed](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_1F9PBqNrN7kjkrNr7CqCFQ.png) |
+
+**Finally the application is up and running perfectly through ArgoCD**
+
+| Application Running |
+| :---: |
+| ![Application Running](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_UbB_K3ezbsi46ZDkSg1w0w.png) |
+
+## Conclusion
+
+In this DevSecOps project, we successfully implemented a robust CI/CD pipeline using Jenkins, integrated with Docker and Kubernetes to streamline application delivery. The project involved automating the entire build, test, and deployment processes, ensuring security was embedded at each stage. By leveraging Docker for containerization and Kubernetes for orchestration, we enhanced scalability and reliability, allowing the infrastructure to dynamically adapt to application demands.
+
+The integration of security checks, such as vulnerability scans and automated compliance audits, directly into the pipeline ensured a secure software delivery lifecycle. The end result was a fully automated, secure, and efficient CI/CD pipeline, reducing deployment time, improving scalability, and increasing the overall security posture of the application infrastructure.
+```
+
+
+
+
 
 
