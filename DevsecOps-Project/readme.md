@@ -1,6 +1,3 @@
-Here's the complete rewritten README.md file with all image references updated to use the correct filenames (with `_` instead of `*`):
-
-```markdown
 # DevSecOps Project: Jenkins CI/CD Pipeline with Docker & Kubernetes Integration
 
 This project demonstrates a complete DevSecOps pipeline. It automates the process of provisioning infrastructure, building and securing an application, and deploying it to a Kubernetes cluster. The pipeline integrates tools like Terraform, Jenkins, SonarQube, Docker, Trivy, and ArgoCD.
@@ -144,15 +141,15 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | EC2 Instance Created |
 | :---: |
-| ![EC2 Instance](images/1_AePoGw381TYDrMNpcJ_YXg.png) |
+| ![EC2 Instance](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_AePoGw381TYDrMNpcJ_YXg.png) |
 
 | Security Groups Configuration |
 | :---: |
-| ![Security Groups](images/1__KwX5diUOcBB3ySRiCpFPg.png) |
+| ![Security Groups](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1__KwX5diUOcBB3ySRiCpFPg.png) |
 
 | Jenkins, Docker, Trivy and SonarQube Running |
 | :---: |
-| ![Services Running](images/1_lqib_nOj8kVb3AGfYc7VHw.png) |
+| ![Services Running](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_lqib_nOj8kVb3AGfYc7VHw.png) |
 
 ## Step 2: Configure Jenkins
 
@@ -163,11 +160,11 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | Jenkins Initial Setup |
 | :---: |
-| ![Jenkins Initial](images/1_QMfPDvlmFW_Z_H_4iQn6Rg.png) |
+| ![Jenkins Initial](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_QMfPDvlmFW_Z_H_4iQn6Rg.png) |
 
 | Jenkins Dashboard |
 | :---: |
-| ![Jenkins Dashboard](images/1_1vTb5ats6bAt_MiIYZYfzg.png) |
+| ![Jenkins Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_1vTb5ats6bAt_MiIYZYfzg.png) |
 
 2.  **Install Additional Plugins:**
     *   Navigate to **Manage Jenkins > Plugins > Available Plugins**.
@@ -175,30 +172,30 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | Jenkins Plugins Installation |
 | :---: |
-| ![Jenkins Plugins](images/1_1t901P4npnt8W0ExJ5HuKg.png) |
+| ![Jenkins Plugins](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_1t901P4npnt8W0ExJ5HuKg.png) |
 
 | Docker Plugins Installation |
 | :---: |
-| ![Docker Plugins](images/1_rpNvIUScq00JFfbUaKjuFg.png) |
+| ![Docker Plugins](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_rpNvIUScq00JFfbUaKjuFg.png) |
 
 3.  **Configure Global Tools:**
     *   Go to **Manage Jenkins > Tools**.
 
 | NodeJS Installation |
 | :---: |
-| ![NodeJS Install](images/1_rCLg0jDvHJzwezfpXCA8cg.png) |
+| ![NodeJS Install](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_rCLg0jDvHJzwezfpXCA8cg.png) |
 
 | JDK 17 Configuration |
 | :---: |
-| ![JDK 17](images/1_1Ml1mSl_i52eIobpZkp0hA.png) |
+| ![JDK 17](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_1Ml1mSl_i52eIobpZkp0hA.png) |
 
 | Docker Installation |
 | :---: |
-| ![Docker Install](images/1_HVL3nsHFYNb3yj3Q4GwPpA.png) |
+| ![Docker Install](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_HVL3nsHFYNb3yj3Q4GwPpA.png) |
 
 | SonarQube Scanner Installation |
 | :---: |
-| ![SonarQube Scanner](images/1_r5PG6qg05oDWs1p-ZtMWkw.png) |
+| ![SonarQube Scanner](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_r5PG6qg05oDWs1p-ZtMWkw.png) |
 
 ## Step 3: Configure SonarQube and Integrate with Jenkins
 
@@ -206,11 +203,11 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | SonarQube Initial Screen |
 | :---: |
-| ![SonarQube Initial](images/1_T3aIsNAiucCRiXOR2spb3w.png) |
+| ![SonarQube Initial](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_T3aIsNAiucCRiXOR2spb3w.png) |
 
 | SonarQube Dashboard |
 | :---: |
-| ![SonarQube Dashboard](images/1_Is9LIk6a-GknzN1O7eIn_g.png) |
+| ![SonarQube Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_Is9LIk6a-GknzN1O7eIn_g.png) |
 
 2.  **Generate a Token in SonarQube:**
     *   Go to **Administration > Security > Users**.
@@ -219,15 +216,15 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | SonarQube Token Generation |
 | :---: |
-| ![Token Generation](images/1_dK2rkiXJTLlXzWSMh-6h0A.png) |
+| ![Token Generation](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_dK2rkiXJTLlXzWSMh-6h0A.png) |
 
 | Token Display |
 | :---: |
-| ![Token](images/1_vdvVbejzy0zF3NW1SiZTZw.png) |
+| ![Token](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_vdvVbejzy0zF3NW1SiZTZw.png) |
 
 | Tokens Generated |
 | :---: |
-| ![Tokens Generated](images/1_OLid5I4hslyJdxnorDRRtw.png) |
+| ![Tokens Generated](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_OLid5I4hslyJdxnorDRRtw.png) |
 
 3.  **Add the Token to Jenkins Credentials:**
     *   In Jenkins, go to **Manage Jenkins > Credentials > System > Global credentials (unrestricted) > Add Credentials**.
@@ -237,7 +234,7 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | Jenkins Credentials Setup |
 | :---: |
-| ![Jenkins Credentials](images/1__daezp9Tcz4m_QwBZ4byiA.png) |
+| ![Jenkins Credentials](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1__daezp9Tcz4m_QwBZ4byiA.png) |
 
 4.  **Configure SonarQube Server in Jenkins:**
     *   Go to **Manage Jenkins > System**.
@@ -250,18 +247,18 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | Jenkins SonarQube Server Configuration |
 | :---: |
-| ![SonarQube Config](images/1_nD0FrI6K-mQCi5SpZzXJsw.png) |
+| ![SonarQube Config](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_nD0FrI6K-mQCi5SpZzXJsw.png) |
 
 5.  **Create a Quality Gate in SonarQube:**
     *   Go to **Quality Gates** and click **Create**.
 
 | Quality Gates Creation |
 | :---: |
-| ![Quality Gates](images/1_hG5DOJN4j0EW3AX5xICfXA.png) |
+| ![Quality Gates](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_hG5DOJN4j0EW3AX5xICfXA.png) |
 
 | Quality Gates Created |
 | :---: |
-| ![Quality Gates Created](images/1_m7cJjEQqf6ZweBdpdmBhlA.png) |
+| ![Quality Gates Created](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_m7cJjEQqf6ZweBdpdmBhlA.png) |
 
 6.  **Create a Webhook in SonarQube:**
     *   Go to **Administration > Configuration > Webhooks**.
@@ -271,15 +268,15 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | Webhook Configuration |
 | :---: |
-| ![Webhook](images/1_puHra26s4Y8Nd2lh_ZZ21g.png) |
+| ![Webhook](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_puHra26s4Y8Nd2lh_ZZ21g.png) |
 
 | Webhook URL Setup |
 | :---: |
-| ![Webhook URL](images/1_S4tX8iGnCYySm1_FdRut8Q.png) |
+| ![Webhook URL](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_S4tX8iGnCYySm1_FdRut8Q.png) |
 
 | Webhook Established |
 | :---: |
-| ![Webhook Established](images/1_Hseku5NIs1m3_HBiT01-0A.png) |
+| ![Webhook Established](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_Hseku5NIs1m3_HBiT01-0A.png) |
 
 ## Step 4: Create the CI/CD Pipeline in Jenkins
 
@@ -290,30 +287,30 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | GitHub Credentials Setup |
 | :---: |
-| ![GitHub Credentials](images/1_Qlj6kibFaEK9BWB-cSu8fw.png) |
+| ![GitHub Credentials](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_Qlj6kibFaEK9BWB-cSu8fw.png) |
 
 | Credentials Established |
 | :---: |
-| ![Credentials Established](images/1_pxfPhWf7VuaGjDtLEPuHmw.png) |
+| ![Credentials Established](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_pxfPhWf7VuaGjDtLEPuHmw.png) |
 
 2.  **Create a SonarQube Project:**
     *   In SonarQube, go to **Administration > Projects > Create Project**.
 
 | Create Project in SonarQube |
 | :---: |
-| ![Create Project](images/1_LpNcBuAYBYCQDX9tXimR1Q.png) |
+| ![Create Project](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_LpNcBuAYBYCQDX9tXimR1Q.png) |
 
 | Create Project Step |
 | :---: |
-| ![Create Project Step](images/1_N3hAGlK1N85pvWmWA3x-Hw.png) |
+| ![Create Project Step](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_N3hAGlK1N85pvWmWA3x-Hw.png) |
 
 | Continue Project Creation |
 | :---: |
-| ![Continue](images/1_C1y651jdkI6wbGb93YuKvQ.png) |
+| ![Continue](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_C1y651jdkI6wbGb93YuKvQ.png) |
 
 | Linux Platform Selection |
 | :---: |
-| ![Linux Platform](images/1_b0XIa8XirZLmJsdvLtDiQw.png) |
+| ![Linux Platform](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_b0XIa8XirZLmJsdvLtDiQw.png) |
 
 3.  **Create a New Pipeline Job in Jenkins:**
     *   Click **New Item**.
@@ -326,7 +323,7 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | Pipeline Configuration |
 | :---: |
-| ![Pipeline Config](images/1_CjB4Iq7kelJoJpNDCWWa4Q.png) |
+| ![Pipeline Config](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_CjB4Iq7kelJoJpNDCWWa4Q.png) |
 
 4.  **Define the `Jenkinsfile` in your Repository:**
     Create a file named `Jenkinsfile` in the root of your GitHub repository with the following content. **Make sure to replace the placeholder values** like your Docker Hub username and the correct URL for your CD job.
@@ -437,11 +434,11 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | Jenkins CI Pipeline Execution |
 | :---: |
-| ![Jenkins Pipeline](images/1__KFDS37tvYlyjV6sE5uESg.png) |
+| ![Jenkins Pipeline](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1__KFDS37tvYlyjV6sE5uESg.png) |
 
 | SonarQube Quality Gates Results |
 | :---: |
-| ![Quality Gates Results](images/1_5dYvIGECHXqbhyeluA1Xvw.png) |
+| ![Quality Gates Results](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_5dYvIGECHXqbhyeluA1Xvw.png) |
 
 ## Step 5: Set Up Email Notifications in Jenkins
 
@@ -457,11 +454,11 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
 
 | Email Notification Setup |
 | :---: |
-| ![Email Setup](images/1_apNjBELo1KsOFZ2fEQWu2w.png) |
+| ![Email Setup](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_apNjBELo1KsOFZ2fEQWu2w.png) |
 
 | SMTP Port Configuration |
 | :---: |
-| ![SMTP Config](images/1_gdYb7nteIBt3FRmrGJfvcw.png) |
+| ![SMTP Config](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_gdYb7nteIBt3FRmrGJfvcw.png) |
 
 ## Step 6: Create an Amazon EKS Cluster
 
@@ -478,7 +475,7 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | kubectl Installation |
 | :---: |
-| ![kubectl Install](images/1_tpFD1ioCaYdcAP0jgvMbIw.png) |
+| ![kubectl Install](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_tpFD1ioCaYdcAP0jgvMbIw.png) |
 
 2.  **Install AWS CLI:**
     ```bash
@@ -491,7 +488,7 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | AWS CLI Installation |
 | :---: |
-| ![AWS CLI Install](images/1_EFWldd1jlxfFe4Vo1plfXQ.png) |
+| ![AWS CLI Install](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_EFWldd1jlxfFe4Vo1plfXQ.png) |
 
 3.  **Install `eksctl`:**
     ```bash
@@ -502,7 +499,7 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | eksctl Installation |
 | :---: |
-| ![eksctl Install](images/1_soqLddXtdtUGvGHcTgXwhg.png) |
+| ![eksctl Install](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_soqLddXtdtUGvGHcTgXwhg.png) |
 
 4.  **Attach IAM Role to EC2:**
     *   In the AWS Console, create an IAM role for EC2 with the `AdministratorAccess` policy (for simplicity in this demo).
@@ -510,19 +507,19 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | IAM Role Creation |
 | :---: |
-| ![IAM Role](images/1_MaJ61XfplFYvaFqQCiFxvg.png) |
+| ![IAM Role](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_MaJ61XfplFYvaFqQCiFxvg.png) |
 
 | IAM Role Created |
 | :---: |
-| ![IAM Role Created](images/1_SduuFXvUM6r4uJaKNzBokA.png) |
+| ![IAM Role Created](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_SduuFXvUM6r4uJaKNzBokA.png) |
 
 | Modify IAM Role Action |
 | :---: |
-| ![Modify IAM Role Action](images/1_5KfFHdSFkrliwX_JDTvnzg.png) |
+| ![Modify IAM Role Action](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_5KfFHdSFkrliwX_JDTvnzg.png) |
 
 | Modify IAM Role |
 | :---: |
-| ![Modify IAM Role](images/1_H5GO4mNLn4NX9IwKEZvhmQ.png) |
+| ![Modify IAM Role](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_H5GO4mNLn4NX9IwKEZvhmQ.png) |
 
 5.  **Create the EKS Cluster:**
     ```bash
@@ -535,11 +532,11 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | EKS Cluster Creation |
 | :---: |
-| ![EKS Cluster](images/1_2W7y2jiwNadNXwlGLPB31A.png) |
+| ![EKS Cluster](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_2W7y2jiwNadNXwlGLPB31A.png) |
 
 | Cluster Creation with Nodes |
 | :---: |
-| ![Cluster Nodes](images/1_PDjSxxtw0EboMKXyicAbHw.png) |
+| ![Cluster Nodes](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_PDjSxxtw0EboMKXyicAbHw.png) |
 
 6.  **Verify the Cluster:**
     ```bash
@@ -548,7 +545,7 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | Get Nodes Command |
 | :---: |
-| ![Get Nodes](images/1_rfv7pW9KPZs7JRvdJ2aFIA.png) |
+| ![Get Nodes](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_rfv7pW9KPZs7JRvdJ2aFIA.png) |
 
 ## Step 7: Set Up Monitoring with Prometheus and Grafana
 
@@ -573,7 +570,7 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | Helm Install |
 | :---: |
-| ![Helm Install](images/1_T5bMhRfJayVUOw0icI5QNQ.png) |
+| ![Helm Install](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_T5bMhRfJayVUOw0icI5QNQ.png) |
 
 3.  **Verify Installation:**
     ```bash
@@ -583,7 +580,7 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | Services Check |
 | :---: |
-| ![Services Check](images/1_KkuHLNM2-vNO7OsaFbNVRg.png) |
+| ![Services Check](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_KkuHLNM2-vNO7OsaFbNVRg.png) |
 
 4.  **Expose Prometheus and Grafana:**
     *   **Prometheus:** Change its service to `LoadBalancer`.
@@ -595,15 +592,15 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | Prometheus Services |
 | :---: |
-| ![Prometheus Services](images/1_Z9eC5UzrmdrliA9auXEZtQ.png) |
+| ![Prometheus Services](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_Z9eC5UzrmdrliA9auXEZtQ.png) |
 
 | Prometheus DNS |
 | :---: |
-| ![Prometheus DNS](images/1_KroEVTGXRbkpW6Y9fq3qEQ.png) |
+| ![Prometheus DNS](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_KroEVTGXRbkpW6Y9fq3qEQ.png) |
 
 | Prometheus Targets |
 | :---: |
-| ![Prometheus Targets](images/1_bUgMyOeK4GiXy5h7inO_Kg.png) |
+| ![Prometheus Targets](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_bUgMyOeK4GiXy5h7inO_Kg.png) |
 
     *   **Grafana:** Change its service to `LoadBalancer`.
         ```bash
@@ -613,11 +610,11 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | Grafana Edit |
 | :---: |
-| ![Grafana Edit](images/1_SKK8YnjpP5C7Bu6HijH5FQ.png) |
+| ![Grafana Edit](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_SKK8YnjpP5C7Bu6HijH5FQ.png) |
 
 | Grafana Services |
 | :---: |
-| ![Grafana Services](images/1_QehvPdpfUn4L8jVxhx9-Gw.png) |
+| ![Grafana Services](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_QehvPdpfUn4L8jVxhx9-Gw.png) |
 
 5.  **Get the Load Balancer URLs:**
     ```bash
@@ -628,7 +625,7 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | Grafana Login |
 | :---: |
-| ![Grafana Login](images/1__PFgsJ6hBlM6tkXaZSAS6g.png) |
+| ![Grafana Login](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1__PFgsJ6hBlM6tkXaZSAS6g.png) |
 
 6.  **Get Grafana Login Password:**
     ```bash
@@ -638,183 +635,4 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | Grafana Dashboard |
 | :---: |
-| ![Grafana Dashboard](images/1_r0oEQN7FnI2d6Zuhe6VNzA.png) |
-
-| Grafana Main |
-| :---: |
-| ![Grafana Main](images/1_hvXhzVDmBZNGAUHVQgT0Wg.png) |
-
-7.  **Import Kubernetes Dashboards in Grafana:**
-    *   Log in to Grafana.
-    *   Go to **Dashboards > Import**.
-
-| Import Dashboard |
-| :---: |
-| ![Import Dashboard](images/1_mwozTHaRwpZpOPz9dRmF7w.png) |
-
-    *   Enter a dashboard ID (e.g., `15760` for Kubernetes cluster monitoring) and click **Load**.
-    *   Select the **Prometheus** data source and click **Import**.
-
-| Dashboard 15760 |
-| :---: |
-| ![Dashboard 15760](images/1_CzL2FVFh-9rAsX3YXY5sfg.png) |
-
-| Imported Dashboard |
-| :---: |
-| ![Imported Dashboard](images/1_hB84JpTVgR8r_BRUkAUGVQ.png) |
-
-| CPU Usage |
-| :---: |
-| ![CPU Usage](images/1_muSS0QK_cU9w_ksKl64aVw.png) |
-
-| Memory Utilization |
-| :---: |
-| ![Memory Utilization](images/1_h27CLySVb1uNus0vzhURqQ.png) |
-
-    *   Import another dashboard ID (e.g., `12740`).
-
-| Dashboard 12740 |
-| :---: |
-| ![Dashboard 12740](images/1_LnjRmIDQKQzAMbhORzBlCA.png) |
-
-| Dashboard 12740 Details |
-| :---: |
-| ![Dashboard 12740 Details](images/1_nKYELYba1HAdwQJ1vjEJqg.png) |
-
-## Step 8: Install and Configure ArgoCD
-
-1.  **Create Namespace and Install ArgoCD:**
-    ```bash
-    kubectl create namespace argocd
-    kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-    ```
-
-| ArgoCD Installation |
-| :---: |
-| ![ArgoCD Install](images/1_rMAnZV6d9BMXsDkOevocuQ.png) |
-
-2.  **Verify ArgoCD Pods:**
-    ```bash
-    kubectl get pods -n argocd
-    ```
-
-3.  **Install ArgoCD CLI:**
-    ```bash
-    sudo curl --silent --location -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/v2.4.7/argocd-linux-amd64
-    sudo chmod +x /usr/local/bin/argocd
-    ```
-
-4.  **Expose ArgoCD Server:**
-    ```bash
-    kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
-    ```
-
-| ArgoCD Expose |
-| :---: |
-| ![ArgoCD Expose](images/1_wuLZ8GySGM7rsNXFtrj_Jg.png) |
-
-5.  **Get ArgoCD Services:**
-    ```bash
-    kubectl get svc -n argocd
-    ```
-
-| ArgoCD Services |
-| :---: |
-| ![ArgoCD Services](images/1_ZmUa4kgmVXrnEV6GnVpvqg.png) |
-
-6.  **Access ArgoCD UI:**
-    Copy the LoadBalancer DNS name and open it in a browser.
-
-| ArgoCD Login Screen |
-| :---: |
-| ![ArgoCD Login](images/1_0TJybz3ss-Uq-l99FRXjzg.png) |
-
-7.  **Get ArgoCD Initial Password:**
-    ```bash
-    kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
-    echo WXVpLUg2LWxoWjRkSHFmSA== | base64 --decode
-    ```
-
-| ArgoCD Password Decode |
-| :---: |
-| ![Password Decode](images/1_gZgfNUjrNq2ek-GlQUsKcA.png) |
-
-| ArgoCD Settings |
-| :---: |
-| ![ArgoCD Settings](images/1_JWzL5vzKuRcah8UiL_x_Ig.png) |
-
-8.  **Login to ArgoCD from CLI:**
-    ```bash
-    argocd login a2255bb2bb33f438d9addf8840d294c5-785887595.us-west-2.elb.amazonaws.com --username admin
-    ```
-
-| ArgoCD CLI Login |
-| :---: |
-| ![CLI Login](images/1_qYHXhutQM3h4MGWyosxyZw.png) |
-
-9.  **Check Available Clusters:**
-    ```bash
-    argocd cluster list
-    ```
-
-| Cluster List |
-| :---: |
-| ![Cluster List](images/1_Hvi_1QPGem73oE2Lh5rhMA.png) |
-
-10. **Get EKS Cluster Context:**
-    ```bash
-    kubectl config get-contexts
-    ```
-
-11. **Add EKS Cluster to ArgoCD:**
-    ```bash
-    argocd cluster add i-08b9d0ff0409f48e7@virtualtechbox-cluster.us-west-2.eksctl.io --name virtualtechbox-eks-cluster
-    ```
-
-| Add Cluster |
-| :---: |
-| ![Add Cluster](images/1_cLybTtXvP-O5wdX8w3j6lA.png) |
-
-## Step 9: Configure ArgoCD to Deploy Application
-
-1.  **Go to ArgoCD Settings:**
-
-| ArgoCD Settings |
-| :---: |
-| ![Settings](images/1_PhZXUVGZTOCfYQ32MRe62Q.png) |
-
-2.  **Enter Credentials:**
-
-| Enter Credentials |
-| :---: |
-| ![Enter Credentials](images/1_JvI2FHrh0UDNEQgnsa01vA.png) |
-
-3.  **Successfully Connected:**
-
-| Successfully Connected |
-| :---: |
-| ![Connected](images/1__okYja306hyQQ07mSLECEw.png) |
-
-## Step 10: Trigger Deployment from Jenkins
-
-1.  **Build the Jenkins Pipeline Again:**
-
-| Jenkins Build |
-| :---: |
-| ![Jenkins Build](images/1_Gxz2Gl6VDvlscvobhtUI6A.png) |
-
-2.  **Application Deployed to ArgoCD:**
-
-| Application Deployed |
-| :---: |
-| ![Application Deployed](images/1_1F9PBqNrN7kjkrNr7CqCFQ.png) |
-
-3.  **Application Running Successfully:**
-
-| Application Running |
-| :---: |
-| ![Application Running](images/1_UbB_K3ezbsi46ZDkSg1w0w.png) |
-
-## Conclusion
-
-In this DevSecOps project, we successfully implemented a robust CI
+| ![Grafana Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_r0oEQ
