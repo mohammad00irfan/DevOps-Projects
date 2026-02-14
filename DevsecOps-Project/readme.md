@@ -318,7 +318,7 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
     *   In the job configuration, under the **Pipeline** section:
         *   **Definition:** `Pipeline script from SCM`
         *   **SCM:** `Git`
-        *   **Repository URL:** `https://github.com/GeraldAkenji/reddit-clone.git` (or your forked repo).
+        *   **Repository URL:** `https://github.com/irfan92488/reddit-clone.git` (or your forked repo).
         *   **Script Path:** `Jenkinsfile`
 
 | Pipeline Configuration |
@@ -353,7 +353,7 @@ We will use Terraform to launch an EC2 instance (t2.large) and install all neces
             }
             stage('Checkout from Git') {
                 steps {
-                    git branch: 'main', url: 'https://github.com/GeraldAkenji/reddit-clone.git'
+                    git branch: 'main', url: 'https://github.com/irfan92488/reddit-clone.git'
                 }
             }
             stage("SonarQube Analysis") {
