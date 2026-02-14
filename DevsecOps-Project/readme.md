@@ -635,4 +635,13 @@ These commands are run on your **Jenkins EC2 instance**.
 
 | Grafana Dashboard |
 | :---: |
-| ![Grafana Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_r0oEQ
+| ![Grafana Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_r0oEQN7FnI2d6Zuhe6VNzA.png).|
+| ![Grafana Dashboard](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_hvXhzVDmBZNGAUHVQgT0Wg.png).|
+
+| Import the dashboard for the kubernetes clustser. |
+| ![Import the dashboard for the kubernetes clustser.](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_mwozTHaRwpZpOPz9dRmF7w.png).|
+
+| v) Import dashboard — 15760 — Load — Select Prometheus & Click Import. |
+| ![Import dashboard — 15760](https://github.com/mohammad00irfan/DevOps-Projects/raw/main/DevsecOps-Project/images/1_CzL2FVFh-9rAsX3YXY5sfg.png).|
+
+
