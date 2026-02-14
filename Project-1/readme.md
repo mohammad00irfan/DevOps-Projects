@@ -300,7 +300,7 @@ ii. Through the container deployed on the same instance.
 
 ## 🛠️ Author & Community  
 
-This project is crafted by **[Harshhaa](https://github.com/mohammad00irfan)** 💡.  
+This project is crafted by **[Mohammed](https://github.com/mohammad00irfan)** 💡.  
 I’d love to hear your feedback! Feel free to share your thoughts.  
 
 📧 **Connect with me:**
@@ -308,11 +308,3 @@ I’d love to hear your feedback! Feel free to share your thoughts.
 - **GitHub**: [@mohammad00irfan](https://github.com/mohammad00irfan) 
 
 ---
-
-## ⭐ Support the Project  
-
-If you found this helpful, consider **starring** ⭐ the repository and sharing it with your network! 🚀  
-
-### 📢 Stay Connected  
-
-![Follow Me](https://imgur.com/2j7GSPs.png)
