@@ -1,6 +1,6 @@
 ## PostgreSQL Database Setup – Production Environment
 
-As part of an application deployment requirement, I configured a PostgreSQL database server to support a newly developed application.
+As part of an application deployment requirement, I configured a PostgreSQL database server to support a newly developed application..
 
 ### ✅ Work Completed
 
