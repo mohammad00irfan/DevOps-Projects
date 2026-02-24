@@ -32,7 +32,7 @@ Assume the following structure:
     └── index.html
 ```
 
-`/opt/finance` contains static website content (mounted as a volume if needed)
+`/opt/finance` contains static website content (mounted as a volume if needed).
 
 ---
 
