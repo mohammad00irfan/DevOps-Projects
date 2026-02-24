@@ -8,7 +8,7 @@ This guide shows how to containerize a static website using Docker and Apache (`
 
 ## **1️⃣ Prerequisites**
 
-* Linux server (App Server 1 in Stratos DC).
+* Linux server (App Server 1 in Stratos DC)
 * Docker installed and running
 * `curl` installed for testing
 * Directories available:
