@@ -1,6 +1,6 @@
 # AWS Infrastructure Migration with Terraform - Complete Guide
 
-This repository showcases a comprehensive, incremental AWS infrastructure migration project using Terraform. The Nautilus DevOps team approached their cloud migration strategically by breaking down large tasks into smaller, manageable units, ensuring smooth implementation and minimizing disruption.
+This repository showcases a comprehensive, incremental AWS infrastructure migration project using Terraform. The Nautilus DevOps team approached their cloud migration strategically by breaking down large tasks into smaller, manageable units, ensuring smooth implementation and minimizing disruption..
 
 ## Table of Contents
 - [Project Overview](#project-overview)
